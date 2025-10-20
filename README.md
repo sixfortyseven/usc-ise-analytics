@@ -9,13 +9,16 @@ Cheatsheets and notes for the M.S. in Analytics at the University of Southern Ca
 - Cohort: Class of 2025
 
 ## Repository Structure
-- `ise529/` — Predictive Analytics
-- `ise530/` — Optimization Methods for Analytics
-- `ise534/` — Data Analytics Consulting
-- `ise535/` — Data Mining
-- `ise543/` — Enterprise Cloud Analytics
-- `ise547/` — Applied Generative Artificial Intelligence for Enterprises
-- `ise558/` — Fundamentals of Data Engineering
+- Top-level folders by course code (e.g., `ise529/`).
+- Inside each course, content is organized by instructor and term:
+  - `ise529/victoria-stodden/2024spring/`
+  - `ise530/andres-gomez-escobar/2024fall/`
+  - `ise535/bruce-wilcox/2025spring/`
+  - `ise543/bruce-wilcox/2025spring/`
+  - `ise547/mayank-kejriwal/2025fall/`
+  - `ise558/carl-kesselman/2024spring/`
+
+Course directories that don’t yet have instructor/term folders are welcome for contributions.
 
 ## Courses
 
@@ -55,12 +58,26 @@ Cheatsheets and notes for the M.S. in Analytics at the University of Southern Ca
 - Folder: [ise558](ise558/)
 
 ## Getting Started
-- Browse any `iseXXX/` folder for course-specific notes and materials.
-- Files are organized by course to keep navigation simple.
+- Browse into a course folder (e.g., `ise529/`), then into the appropriate `instructor/term` folder.
+- Each `instructor/term` folder includes a local `README.md` with course name, instructor, and term.
 
 ## Contributing
 - Issues and PRs are welcome. Keep content within the appropriate course folder.
-- Avoid sharing graded solutions or sensitive materials.
+- Avoid sharing graded solutions, proprietary materials, or sensitive data.
+- New content should be added under `ise<course>/<instructor-slug>/<termyear>/`.
+
+### Naming Conventions
+- `instructor-slug`: lowercase, hyphenated full name (e.g., `victoria-stodden`, `andres-gomez-escobar`).
+- `termyear`: four-digit year + lowercase term, no separator (e.g., `2024spring`, `2024fall`, `2025spring`).
+- Example: `ise529/victoria-stodden/2024spring/`.
+
+### Required Subfolder README
+Each `instructor/term` folder should include a `README.md` containing at minimum:
+- Course: e.g., `ISE 529 — Predictive Analytics`
+- Instructor: Full name
+- Term: e.g., `2024 Spring`
+
+You can copy `SUBFOLDER_README_TEMPLATE.md` as a starting point.
 
 ## Author
 - Tzu-Chi Liu — Class of 2025
